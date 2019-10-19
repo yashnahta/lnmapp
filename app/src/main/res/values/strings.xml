@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">lnmapp</string>
+    <!-- //   <string name="RC_SIGN_IN">17431404493–1kcjlpselp3uu6t6g2fmomqfle5t392n.apps.googleusercontent.com</string>-->
+    <string name="Open">lnmapp</string>
+    <string name="Close">lnmapp</string>
+    <string-array name="fragmnents">
+        <item>Y-17 CSE</item>
+        <item>Y-17 ECE</item>
+        <item>Y-17 ME</item>
+        <item>Y-18 CSE</item>
+        <item>Y-18 ECE</item>
+        <item>Y-18 ME</item>
+        <item>Y-19 CSE</item>
+        <item>Y-19 ECE</item>
+        <item>Y-19 ME</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

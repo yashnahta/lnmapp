@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mess"
+        android:title="Mess Menu"/>
+    <item android:id="@+id/class1"
+        android:title="class time table"/>
+    <item android:id="@+id/bla"
+        android:title="bla bla"/>
+    <item android:id="@+id/calender"
+        android:title="Calender Events"/>
+
+</menu>

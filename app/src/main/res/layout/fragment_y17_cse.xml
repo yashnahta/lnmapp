@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Y17CSE">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/view_y17_cse"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="64dp"
+
+        android:text="Y17 CSE Time Table"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_monday"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Monday :"
+                android:textColor="#141414"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_display_m1"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginRight="16dp"
+                android:text="1:00 PM - 1:50 PM : IDS (A1), AI (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_m2"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="16dp"
+                android:text="2:00 PM - 2:50 PM : SWE (A1), CS (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_m3"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="106dp"
+                android:layout_marginRight="16dp"
+                android:text="3:00 PM - 3:50 PM : AI (A1), IDS (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_m4"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="127dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="4:00 PM - 4:50 PM : CS (A1), SWE (A2)"
+                android:textSize="14sp" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_tuesday"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Tuesday :"
+                android:textColor="#141414"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_display_t1"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginRight="16dp"
+                android:text="2:30 PM - 3:50 PM : IOT"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_t2"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="16dp"
+                android:text="4:00 PM - 5:20 PM : IMAD"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_wednesday"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Wednesday :"
+                android:textColor="#141414"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_display_w1"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginRight="16dp"
+                android:text="1:00 PM - 1:50 PM : SWE (A1), CS (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_w2"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="16dp"
+                android:text="2:00 PM - 2:50 PM : AI (A1), IDS (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_w3"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="106dp"
+                android:layout_marginRight="16dp"
+                android:text="3:00 PM - 3:50 PM : CS (A1), SWE (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_w4"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="127dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="5:00 PM - 5:50 PM : IDS (A1), AI (A2)"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_thursday"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Thursday :"
+                android:textColor="#141414"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_display_th1"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginRight="16dp"
+                android:text="2:30 PM - 3:50 PM : IOT"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_th2"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="16dp"
+                android:text="4:00 PM - 5:20 PM : IMAD"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginRight="30dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_friday"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Friday :"
+                android:textColor="#141414"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt_display_f1"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginRight="16dp"
+                android:text="1:00 PM - 1:50 PM : AI (A1), IDS (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_f2"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="16dp"
+                android:text="2:00 PM - 2:50 PM : CS (A1), SWE (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_f3"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="106dp"
+                android:layout_marginRight="16dp"
+                android:text="4:00 PM - 4:50 PM : IDS (A1), AI (A2)"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_display_f4"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="127dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="5:00 PM - 5:50 PM : SWE (A1), CS (A2)"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>
