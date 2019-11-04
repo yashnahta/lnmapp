@@ -2,6 +2,7 @@ package com.example.lnmapp;
 
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -41,6 +42,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goClicked(final View view){
+        final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "",
+                "Loading. Please wait...", true);
+        dialog.show();
+
+        Runnable progressRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                dialog.cancel();
+            }
+        };
+
+        Handler pdCanceller = new Handler();
+        pdCanceller.postDelayed(progressRunnable, 1500);
         mAuth.signInWithEmailAndPassword(username.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
