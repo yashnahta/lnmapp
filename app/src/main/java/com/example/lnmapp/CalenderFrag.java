@@ -1,8 +1,10 @@
 package com.example.lnmapp;
 
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -33,13 +35,14 @@ public class CalenderFrag extends Fragment {
         calendarView = (CalendarView) v.findViewById(R.id.calendarView);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @TargetApi(Build.VERSION_CODES.M)
             @Override
             public void onSelectedDayChange(CalendarView calendarView, int i, int i1, int i2) {
                 i1=i1+1;
                 if (i1 == 10 && i2 == 30) {
-                    Toast.makeText(getContext(), "LNMIIT Foundation Day", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "LNMIIT Foundation Day", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getContext(), "No Event Today", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "No Event Today", Toast.LENGTH_SHORT).show();
                 }
             }
         });

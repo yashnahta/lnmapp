@@ -15,8 +15,9 @@
         android:theme="@style/AppTheme"
 >
 
-    <meta-data android:name="com.google.android.geo.API_KEY"
-        android:value="@string/map_key"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBkWDENIQGJ4defUnnA01q_uqLNjH2ux6I"/>
 
         <activity android:name=".MessActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -30,5 +31,10 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
 
 </manifest>
