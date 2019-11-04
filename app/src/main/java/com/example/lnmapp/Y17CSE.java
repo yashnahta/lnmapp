@@ -38,7 +38,7 @@ public class Y17CSE extends Fragment {
         // Inflate the layout for this fragment
 
 
-        mDatabase = database.getReference().child("CLASS TIMETABLE").child("MONDAY").child("10AM-11AM");
+        mDatabase = database.getReference().child("CLASS TIMETABLE").child("Y17").child("CSE").child("MONDAY").child("01:00PM-02:00PM");
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

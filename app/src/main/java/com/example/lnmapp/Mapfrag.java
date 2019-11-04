@@ -65,7 +65,6 @@ public class Mapfrag extends Fragment
                         .position(new LatLng(26.936158,75.923664))
                         .title("LNMIIT"));
 
-
             }
         });
 
