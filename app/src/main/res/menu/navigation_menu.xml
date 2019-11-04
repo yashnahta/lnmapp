@@ -5,9 +5,11 @@
         android:title="Mess Menu"/>
     <item android:id="@+id/class1"
         android:title="class time table"/>
-    <item android:id="@+id/bla"
-        android:title="bla bla"/>
+    <item android:id="@+id/plc"
+        android:title="Placement Activity"/>
     <item android:id="@+id/calender"
         android:title="Calender Events"/>
+    <item android:id="@+id/map1"
+        android:title="Map"/>
 
 </menu>

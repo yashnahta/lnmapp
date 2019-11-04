@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 Toast.makeText(HomeActivity.this, "Class Time Table",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ClassTime()).commit();
                                 break;
-                            case R.id.bla:
+                            case R.id.plc:
                                 Toast.makeText(HomeActivity.this, "Placement Activities",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new PlacementActivity()).commit();
                                 break;
@@ -66,6 +66,12 @@ public class HomeActivity extends AppCompatActivity  {
                                 Toast.makeText(HomeActivity.this, "Calender",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CalenderFrag()).commit();
                                 dl.closeDrawer(GravityCompat.START);
+                                break;
+                            case R.id.map1:
+                                Toast.makeText(HomeActivity.this, "Map",Toast.LENGTH_SHORT).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Mapfrag()).commit();
+                               // dl.closeDrawer(GravityCompat.START);
+                                break;
                             default:
                                 return true;
                         }

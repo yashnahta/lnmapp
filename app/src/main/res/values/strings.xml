@@ -3,6 +3,8 @@
     <!-- //   <string name="RC_SIGN_IN">17431404493–1kcjlpselp3uu6t6g2fmomqfle5t392n.apps.googleusercontent.com</string>-->
     <string name="Open">lnmapp</string>
     <string name="Close">lnmapp</string>
+    <string name="map_key" translatable="false">AIzaSyBkWDENIQGJ4defUnnA01q_uqLNjH2ux6I</string>
+
     <string-array name="fragmnents">
         <item>Y-17 CSE</item>
         <item>Y-17 ECE</item>
