@@ -77,6 +77,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BusTime()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
+
                             default:
                                 return true;
                         }
