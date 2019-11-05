@@ -11,5 +11,7 @@
         android:title="Calender Events"/>
     <item android:id="@+id/map1"
         android:title="Map"/>
+    <item android:id="@+id/bus"
+        android:title="Bus Schedule"/>
 
 </menu>

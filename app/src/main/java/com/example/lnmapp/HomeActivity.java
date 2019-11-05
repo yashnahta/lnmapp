@@ -72,6 +72,11 @@ public class HomeActivity extends AppCompatActivity  {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Mapfrag()).commit();
                                // dl.closeDrawer(GravityCompat.START);
                                 break;
+                            case R.id.bus:
+                                Toast.makeText(HomeActivity.this, " Bus",Toast.LENGTH_SHORT).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BusTime()).commit();
+                                dl.closeDrawer(GravityCompat.START);
+                                break;
                             default:
                                 return true;
                         }
