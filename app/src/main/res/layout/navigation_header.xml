@@ -5,13 +5,13 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:background="#E6000000">
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/logo"
-        />
+<!--    <ImageView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="@drawable/logo"-->
+<!--        />-->
 
     <TextView
         android:id="@+id/navuserid"

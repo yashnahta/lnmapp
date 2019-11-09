@@ -54,40 +54,44 @@ public class HomeActivity extends AppCompatActivity  {
 //        TextView roll = (TextView) headerView.findViewById(R.id.rollid);
 //        roll.setText("Your Text Here");
        // Toast.makeText(this, mAuth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
-        mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("name");
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String s=dataSnapshot.getValue(String.class);
-                Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
-                NavigationView nv = (NavigationView) findViewById(R.id.nv);
-                View headerView = nv.getHeaderView(0);
-                TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
-                navUsername.setText(s);
+        if(mAuth.getCurrentUser()!=null) {
+            mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("name");
+            mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    String s = dataSnapshot.getValue(String.class);
+                    Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
+                    NavigationView nv = (NavigationView) findViewById(R.id.nv);
+                    View headerView = nv.getHeaderView(0);
+                    TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
+                    navUsername.setText(s);
 
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                }
 
-            }
-        });
-        mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("roll");
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String s=dataSnapshot.getValue(String.class);
-                Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
-                NavigationView nv = (NavigationView) findViewById(R.id.nv);
-                View headerView = nv.getHeaderView(0);
-                TextView navUsername = (TextView) headerView.findViewById(R.id.rollid);
-                navUsername.setText(s);
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                }
+            });
+            mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("roll");
+            mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    String s = dataSnapshot.getValue(String.class);
+                    Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
+                    NavigationView nv = (NavigationView) findViewById(R.id.nv);
+                    View headerView = nv.getHeaderView(0);
+                    TextView navUsername = (TextView) headerView.findViewById(R.id.rollid);
+                    navUsername.setText(s);
 
-            }
-        });
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
 
                 nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -122,7 +126,9 @@ public class HomeActivity extends AppCompatActivity  {
                                 break;
                             case R.id.bus:
                                 Toast.makeText(HomeActivity.this, " Bus",Toast.LENGTH_SHORT).show();
-                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BusTime()).commit();
+                                Intent intent=new Intent(getApplicationContext(),Bustimes.class);
+                                startActivity(intent);
+//                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BusTime()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.settings:
