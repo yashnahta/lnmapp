@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_home);
 
         String string=getString(R.string.navuser);
-        getString(R.string.navuser)=" " ;
+      //  getString(R.string.navuser)=" " ;
 
                 dl = (DrawerLayout)findViewById(R.id.activity_main);
                 t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
