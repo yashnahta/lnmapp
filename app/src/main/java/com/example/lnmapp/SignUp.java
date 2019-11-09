@@ -1,6 +1,7 @@
 package com.example.lnmapp;
 
-
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,37 +13,32 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-public class MainActivity extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
     int fl=1;
     EditText password;
     EditText username;
+    EditText name;
     Button button;
+
     private FirebaseAuth mAuth=FirebaseAuth.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_sign_up);
         password=findViewById(R.id.pass);
         username=findViewById(R.id.user);
-        if(mAuth.getCurrentUser()!=null){
-            login();
-        }
+        name=findViewById(R.id.name);
+
 
     }
-
     public void goClicked(final View view){
-        final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "",
+        final ProgressDialog dialog = ProgressDialog.show(SignUp.this, "",
                 "Loading. Please wait...", true);
         dialog.show();
 
@@ -82,16 +78,14 @@ public class MainActivity extends AppCompatActivity {
                 });
 
     }
-    public void signup(View view){
-        Intent intent =new Intent(this,SignUp.class);
-        startActivity(intent);
-    }
     public void guest(View view){
         Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
         startActivity(intent);
     }
     void login(){
         FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("email").setValue(username.getText().toString());
+
+        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("name").setValue(name.getText().toString());
         Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
         intent.putExtra("username",username.getText());

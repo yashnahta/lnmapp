@@ -4,7 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/user"
@@ -15,11 +37,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:layout_marginEnd="105dp"
         android:layout_marginRight="105dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="46dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
@@ -41,7 +63,7 @@
         android:layout_marginLeft="77dp"
         android:layout_marginEnd="94dp"
         android:layout_marginRight="94dp"
-        android:layout_marginBottom="187dp"
+        android:layout_marginBottom="149dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
@@ -49,24 +71,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:layout_marginBottom="260dp"
-        android:onClick="goClicked"
-        android:text="Sign In"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass" />
 
     <Button
         android:id="@+id/button2"
@@ -85,12 +89,12 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="261dp"
-        android:layout_toStartOf="@+id/button"
-        android:layout_toLeftOf="@+id/button"
-        android:onClick="signup"
-        android:text="New User" />
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="251dp"
+        android:onClick="goClicked"
+        android:text="Sign Up" />
 </RelativeLayout>
