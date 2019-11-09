@@ -19,7 +19,7 @@
         android:minHeight="?attr/actionBarSize"
         app:tabMode="scrollable"
         app:tabGravity="fill"
-        app:tabTextColor="#CF1818"
+        app:tabTextColor="?attr/colorPrimaryDark"
         app:tabSelectedTextColor="@color/colorAccent"
         />
 

@@ -11,22 +11,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FCFBF2"
+        android:background="?attr/backgroundcolor"
         tools:context=".DemoFragment"
         tools:ignore="ExtraText">
 
-        <TextView
-            android:id="@+id/txt_display"
-            android:layout_width="395dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="16dp"
-            android:gravity="center"
-            android:text="Placement Activities"
-            android:textColor="#009688"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -39,7 +28,7 @@
             <RelativeLayout
                 android:layout_width="343dp"
                 android:layout_height="172dp"
-                android:background="#98abcf"
+                android:background="?attr/cardbackground"
                 android:orientation="horizontal">
 
 
@@ -54,7 +43,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Samsung"
-                    android:textColor="#141414"
+                    android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
@@ -130,7 +119,7 @@
             android:layout_height="173dp">
 
             <RelativeLayout
-                android:background="#98abcf"
+                android:background="?attr/cardbackground"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -148,7 +137,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Amazon"
-                    android:textColor="#141414"
+                    android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
@@ -221,7 +210,7 @@
             android:layout_height="173dp">
 
             <RelativeLayout
-                android:background="#98abcf"
+                android:background="?attr/cardbackground"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -238,7 +227,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Addverb Technologies"
-                    android:textColor="#141414"
+                    android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView

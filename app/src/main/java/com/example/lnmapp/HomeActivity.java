@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -26,11 +27,15 @@ public class HomeActivity extends AppCompatActivity  {
     private ViewPager viewPager;
     private ViewPagerAdapter adapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        String string=getString(R.string.navuser);
+        getString(R.string.navuser)=" " ;
 
                 dl = (DrawerLayout)findViewById(R.id.activity_main);
                 t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
@@ -75,6 +80,11 @@ public class HomeActivity extends AppCompatActivity  {
                             case R.id.bus:
                                 Toast.makeText(HomeActivity.this, " Bus",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BusTime()).commit();
+                                dl.closeDrawer(GravityCompat.START);
+                                break;
+                            case R.id.settings:
+                                Toast.makeText(HomeActivity.this, " Bus",Toast.LENGTH_SHORT).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Settings()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
 
