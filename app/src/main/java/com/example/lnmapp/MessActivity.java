@@ -32,7 +32,7 @@ public class MessActivity extends Fragment {
         adapter = new ViewPagerAdapter(getChildFragmentManager());
         viewPager.setAdapter(adapter);
 
-        getActivity().setTitle("Mess Menu");
+        getActivity().setTitle("MessMenu");
 
 
         tabLayout = view.findViewById(R.id.tabs);
