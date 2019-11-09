@@ -16,5 +16,7 @@
 
     <item android:id="@+id/settings"
         android:title="Settings"/>
+    <item android:id="@+id/feed"
+        android:title="Feed"/>
 
 </menu>

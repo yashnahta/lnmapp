@@ -136,6 +136,11 @@ public class HomeActivity extends AppCompatActivity  {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Settings()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
+                            case R.id.feed:
+                                Toast.makeText(HomeActivity.this, " Feed",Toast.LENGTH_SHORT).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedFragment()).commit();
+                                dl.closeDrawer(GravityCompat.START);
+                                break;
 
                             default:
                                 return true;
