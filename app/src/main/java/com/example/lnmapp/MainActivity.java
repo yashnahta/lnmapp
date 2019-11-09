@@ -1,7 +1,5 @@
 package com.example.lnmapp;
 
-
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -91,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     void login(){
-        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("email").setValue(username.getText().toString());
+      //  FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("email").setValue(username.getText().toString());
+
         Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
         intent.putExtra("username",username.getText());

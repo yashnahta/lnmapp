@@ -24,7 +24,6 @@ public class CalenderFrag extends Fragment {
     private CalendarView calendarView;
 
     public CalenderFrag() {
-        // Required empty public constructor
     }
 
     @Override

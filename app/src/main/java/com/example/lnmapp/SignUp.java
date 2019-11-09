@@ -24,6 +24,7 @@ public class SignUp extends AppCompatActivity {
     EditText password;
     EditText username;
     EditText name;
+    EditText roll;
     Button button;
 
     private FirebaseAuth mAuth=FirebaseAuth.getInstance();
@@ -34,6 +35,8 @@ public class SignUp extends AppCompatActivity {
         password=findViewById(R.id.pass);
         username=findViewById(R.id.user);
         name=findViewById(R.id.name);
+        roll=findViewById(R.id.roll);
+
 
 
     }
@@ -59,6 +62,8 @@ public class SignUp extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
+                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("name").setValue(name.getText().toString());
+                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("roll").setValue(roll.getText().toString());
                             login();
                         } else {
 
@@ -67,6 +72,8 @@ public class SignUp extends AppCompatActivity {
                             if(task.isSuccessful()) {
 
                                 FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
+                                FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("name").setValue(name.getText().toString());
+                                FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("roll").setValue(roll.getText().toString());
                                 login();
                             }
                             else{
@@ -83,9 +90,9 @@ public class SignUp extends AppCompatActivity {
         startActivity(intent);
     }
     void login(){
-        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("email").setValue(username.getText().toString());
-
-        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("name").setValue(name.getText().toString());
+ //       FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("email").setValue(username.getText().toString());
+//        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("name").setValue(name.getText().toString());
+//        FirebaseDatabase.getInstance().getReference().child("users").child("uuid").child("roll").setValue(roll.getText().toString());
         Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
         intent.putExtra("username",username.getText());

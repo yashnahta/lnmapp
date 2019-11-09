@@ -19,10 +19,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class BusTime extends Fragment {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -36,17 +32,9 @@ public class BusTime extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
 
-
-//        yaha se
-//
-//
-
-
-
-        View view= inflater.inflate(R.layout.fragment_y17_cse, container, false);
+        View view= inflater.inflate(R.layout.fragment_bus_time, container, false);
 
 
         final ProgressDialog dialog = ProgressDialog.show(getContext(), "",
@@ -100,11 +88,7 @@ public class BusTime extends Fragment {
             }
         });
 
-
-//
-//yaha tak
-
-        return inflater.inflate(R.layout.fragment_bus_time, container, false);
+        return view;
     }
 
 }

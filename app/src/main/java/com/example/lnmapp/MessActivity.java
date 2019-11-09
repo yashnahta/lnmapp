@@ -25,8 +25,6 @@ public class MessActivity extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_mess, container, false);
-//        toolbar = view.findViewById(R.id.toolBar);
-//        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
         viewPager = view.findViewById(R.id.pager);
         adapter = new ViewPagerAdapter(getChildFragmentManager());

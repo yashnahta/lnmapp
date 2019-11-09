@@ -1,5 +1,4 @@
 package com.example.lnmapp;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,16 +6,19 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class HomeActivity extends AppCompatActivity  {
     private FirebaseAuth mAuth=FirebaseAuth.getInstance();
@@ -27,7 +29,8 @@ public class HomeActivity extends AppCompatActivity  {
     private ViewPager viewPager;
     private ViewPagerAdapter adapter;
 
-
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,47 @@ public class HomeActivity extends AppCompatActivity  {
 
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-                nv = (NavigationView)findViewById(R.id.nv);
+        NavigationView nv = (NavigationView) findViewById(R.id.nv);
+        View headerView = nv.getHeaderView(0);
+//
+//        TextView roll = (TextView) headerView.findViewById(R.id.rollid);
+//        roll.setText("Your Text Here");
+       // Toast.makeText(this, mAuth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
+        mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("name");
+        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String s=dataSnapshot.getValue(String.class);
+                Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
+                NavigationView nv = (NavigationView) findViewById(R.id.nv);
+                View headerView = nv.getHeaderView(0);
+                TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
+                navUsername.setText(s);
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        mDatabase = database.getReference().child("users").child(mAuth.getCurrentUser().getUid().toString()).child("roll");
+        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String s=dataSnapshot.getValue(String.class);
+                Toast.makeText(HomeActivity.this, s, Toast.LENGTH_SHORT).show();
+                NavigationView nv = (NavigationView) findViewById(R.id.nv);
+                View headerView = nv.getHeaderView(0);
+                TextView navUsername = (TextView) headerView.findViewById(R.id.rollid);
+                navUsername.setText(s);
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
                 nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
