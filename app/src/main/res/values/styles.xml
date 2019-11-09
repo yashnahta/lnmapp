@@ -11,7 +11,7 @@
         <item name="backgroundcolor">#fcfcfc</item>
         <item name="cardbackground">#ffffff</item>
         <item name="textcolor">#808080</item>
-        <item name="tintcolor">#000000</item>
+        <item name="tintcolor">#80000000</item>
         <item name="buttoncolor">#2196F3</item>
     </style>
 

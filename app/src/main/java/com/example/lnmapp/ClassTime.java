@@ -51,6 +51,7 @@ public class ClassTime extends Fragment {
         y19ME= new Y19ME();
          String[] items;
 
+        getActivity().setTitle("Class Schedule");
         items=getActivity().getResources().getStringArray(R.array.fragmnents);
 
        view= inflater.inflate(R.layout.fragment_class_time, container, false);

@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_home);
 
         String string=getString(R.string.navuser);
-      //  getString(R.string.navuser)=" " ;
+      //  getString(R.string.navuser)=" ";
 
                 dl = (DrawerLayout)findViewById(R.id.activity_main);
                 t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
@@ -111,7 +111,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new PlacementActivity()).commit();
                                 break;
                             case R.id.calender:
-                                Toast.makeText(HomeActivity.this, "Calender",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Calendar",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CalenderFrag()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
@@ -126,7 +126,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.settings:
-                                Toast.makeText(HomeActivity.this, " Bus",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, " Settings",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Settings()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;

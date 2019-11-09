@@ -30,7 +30,7 @@ public class CalenderFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_calender, container, false);
-
+        getActivity().setTitle("Institute Calendar");
         calendarView = (CalendarView) v.findViewById(R.id.calendarView);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {

@@ -16,6 +16,7 @@
         android:id="@+id/tabs"
         android:background="#FFFFFF"
         android:elevation="4dp"
+
         android:minHeight="?attr/actionBarSize"
         app:tabMode="scrollable"
         app:tabGravity="fill"

@@ -4,15 +4,16 @@
     <item android:id="@+id/mess"
         android:title="Mess Menu"/>
     <item android:id="@+id/class1"
-        android:title="class time table"/>
-    <item android:id="@+id/plc"
-        android:title="Placement Activity"/>
-    <item android:id="@+id/calender"
-        android:title="Calender Events"/>
-    <item android:id="@+id/map1"
-        android:title="Map"/>
+        android:title="Class Schedule"/>
     <item android:id="@+id/bus"
         android:title="Bus Schedule"/>
+    <item android:id="@+id/plc"
+        android:title="Placement Activities"/>
+    <item android:id="@+id/calender"
+        android:title="Institute Calendar"/>
+    <item android:id="@+id/map1"
+        android:title="Institute Map"/>
+
     <item android:id="@+id/settings"
         android:title="Settings"/>
 
