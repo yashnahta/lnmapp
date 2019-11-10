@@ -1,8 +1,10 @@
 package com.example.lnmapp;
 
 
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,11 +15,15 @@ import android.widget.TextView;
 
 public class FeedFragment extends Fragment {
 
-    private TextView textView;
+
+    private TextView textView2;
+    private TextView textView3;
+    private TextView textView4;
 
     public FeedFragment() {
         // Required empty public constructor
     }
+
 
 
     @Override
@@ -26,33 +32,35 @@ public class FeedFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_feed, container, false);
 
+        String str = "dwekn.kcmlamsmwldn";
 
-        textView = view.findViewById(R.id.txt1_1);
-        textView.setText("lorem ipsum");
+        TextView textView ;
+        textView = view.findViewById(R.id.t1);
+        textView.setText("parth");
 
-        textView = view.findViewById(R.id.txt1_2);
-        textView.setText("lorem ipsum");
+        textView2 = view.findViewById(R.id.t2);
+        textView2.setText("lahbfecnw");
 
-        textView = view.findViewById(R.id.txt2_1);
-        textView.setText("lorem ipsum");
+        textView3 = view.findViewById(R.id.t3);
+        textView3.setText("wjdbec");
 
-        textView = view.findViewById(R.id.txt2_2);
-        textView.setText("lorem ipsum");
+        textView4 = view.findViewById(R.id.t4);
+        textView4.setText(str);
 
-        textView = view.findViewById(R.id.txt3_1);
-        textView.setText("lorem ipsum");
+        textView = view.findViewById(R.id.t5);
+        textView.setText("parth");
 
-        textView = view.findViewById(R.id.txt3_2);
-        textView.setText("lorem ipsum");
+        textView = view.findViewById(R.id.t6);
+        textView.setText("lahbfecnw");
 
-        textView = view.findViewById(R.id.txt4_1);
-        textView.setText("lorem ipsum");
+        textView = view.findViewById(R.id.t7);
+        textView.setText("wjdbec");
 
-        textView = view.findViewById(R.id.txt4_2);
-        textView.setText("lorem ipsum");
+        textView = view.findViewById(R.id.t8);
+        textView.setText("swdefcndj");
 
 
-        return inflater.inflate(R.layout.fragment_feed, container, false);
+        return view;
     }
 
 }

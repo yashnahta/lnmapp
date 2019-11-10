@@ -18,5 +18,7 @@
         android:title="Settings"/>
     <item android:id="@+id/feed"
         android:title="Feed"/>
+    <item android:id="@+id/quick"
+        android:title="Quicklinks"/>
 
 </menu>

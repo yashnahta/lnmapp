@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
         if(mAuth.getCurrentUser()!=null){
             login();
         }
-
     }
-
     public void goClicked(final View view){
         final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "",
                 "Loading. Please wait...", true);
