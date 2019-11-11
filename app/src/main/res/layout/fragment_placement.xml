@@ -32,8 +32,7 @@
                 android:orientation="horizontal">
 
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+
 
                 <TextView
                     android:id="@+id/company1"
@@ -99,9 +98,7 @@
                     android:id="@+id/switch1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginRight="8dp"
-                    ></Switch>
+                    android:layout_marginTop="60dp"></Switch>
 
 
 
@@ -126,8 +123,6 @@
 
 
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/company2"
@@ -217,8 +212,6 @@
 
 
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/company3"
                     android:layout_width="379dp"

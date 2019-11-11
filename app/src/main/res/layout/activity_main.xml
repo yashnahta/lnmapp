@@ -22,12 +22,15 @@
         android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/pass"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+
         android:layout_marginLeft="48dp"
         android:layout_marginEnd="43dp"
         android:layout_marginRight="43dp"
-
         android:layout_marginBottom="23dp"
         android:background="@drawable/edittext_bg"
         android:ems="10"
@@ -75,7 +78,7 @@
         android:layout_marginEnd="49dp"
         android:layout_marginRight="49dp"
         android:layout_marginBottom="233dp"
-        android:background="#2979FF"
+        android:background="#2196F3"
         android:onClick="goClicked"
         android:text="Sign In"
         android:textColorHighlight="#1976D2"
@@ -106,13 +109,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-298dp"
-        android:layout_marginRight="-298dp"
-        android:layout_marginBottom="117dp"
+        android:layout_marginEnd="-260dp"
+        android:layout_marginRight="-260dp"
+        android:layout_marginBottom="129dp"
         android:layout_toStartOf="@+id/button"
         android:layout_toLeftOf="@+id/button"
         android:onClick="signup"
-        android:text="New User? Click here to Sign Up!"
-        android:textSize="13dp" />
+        android:text="New User? Click here to Sign Up!" />
 </RelativeLayout>
 
