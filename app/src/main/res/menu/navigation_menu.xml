@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item android:id="@+id/feed"
+        android:title="Feed"/>
     <item android:id="@+id/mess"
         android:title="Mess Menu"/>
     <item android:id="@+id/class1"
@@ -13,12 +14,14 @@
         android:title="Institute Calendar"/>
     <item android:id="@+id/map1"
         android:title="Institute Map"/>
-
+    <item android:id="@+id/complaint"
+        android:title="Make Complaints"/>
+    <item android:id="@+id/quick"
+        android:title="Quick Links"/>
     <item android:id="@+id/settings"
         android:title="Settings"/>
-    <item android:id="@+id/feed"
-        android:title="Feed"/>
-    <item android:id="@+id/quick"
-        android:title="Quicklinks"/>
+
+
+
 
 </menu>

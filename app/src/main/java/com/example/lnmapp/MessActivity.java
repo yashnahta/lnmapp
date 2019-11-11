@@ -29,10 +29,11 @@ public class MessActivity extends Fragment {
       //  ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
         viewPager = view.findViewById(R.id.pager);
+
         adapter = new ViewPagerAdapter(getChildFragmentManager());
         viewPager.setAdapter(adapter);
 
-        getActivity().setTitle("MessMenu");
+        getActivity().setTitle("Mess Menu");
 
 
         tabLayout = view.findViewById(R.id.tabs);

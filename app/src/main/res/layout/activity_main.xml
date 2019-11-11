@@ -4,25 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/sa" />
+
     <EditText
+
         android:id="@+id/user"
-        android:layout_width="228dp"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/pass"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,21 +41,23 @@
 
     <EditText
         android:id="@+id/pass"
-        android:layout_width="240dp"
+        android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button2"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginRight="94dp"
-        android:layout_marginBottom="187dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,17 +65,21 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        style="@style/FirebaseUI.Button.AccountChooser.AnonymousButton"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="233dp"
+        android:background="#2979FF"
         android:onClick="goClicked"
         android:text="Sign In"
+        android:textColorHighlight="#1976D2"
+        android:textColorLink="#1976D2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,27 +87,32 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="208dp"
+        style="@style/FirebaseUI.Button.AccountChooser.AnonymousButton"
+        android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
-        android:layout_marginBottom="166dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="172dp"
+        android:background="#FFAB40"
         android:onClick="guest"
-        android:text="Guest Login" />
+        android:text="Guest Login"
+        android:textColorLink="#1976D2" />
 
-    <Button
+    <TextView
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="261dp"
+        android:layout_marginEnd="-298dp"
+        android:layout_marginRight="-298dp"
+        android:layout_marginBottom="117dp"
         android:layout_toStartOf="@+id/button"
         android:layout_toLeftOf="@+id/button"
         android:onClick="signup"
-        android:text="New User" />
+        android:text="New User? Click here to Sign Up!"
+        android:textSize="13dp" />
 </RelativeLayout>
+

@@ -36,6 +36,7 @@ public class HomeActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedFragment()).commit();
 
         String string=getString(R.string.navuser);
       //  getString(R.string.navuser)=" ";
@@ -137,15 +138,21 @@ public class HomeActivity extends AppCompatActivity  {
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.feed:
-                                Toast.makeText(HomeActivity.this, " Feed",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Feed",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedFragment()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.quick:
-                                Toast.makeText(HomeActivity.this, " Feed",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Quick Links",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new QuickLinksFragment()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
+                            case R.id.complaint:
+                                Toast.makeText(HomeActivity.this, "Make Complaints",Toast.LENGTH_SHORT).show();
+                                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Complaint()).commit();
+                                dl.closeDrawer(GravityCompat.START);
+                                break;
+
 
                             default:
                                 return true;
