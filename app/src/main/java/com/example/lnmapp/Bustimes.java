@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
@@ -23,7 +25,8 @@ public class Bustimes extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-
+    public ArrayList<ExampleItem> exampleList = new ArrayList<>();
+    public String[] arrSplit;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference mDatabase;
 
@@ -33,6 +36,21 @@ public class Bustimes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bustimes);
 
+//
+        final ProgressDialog dialog = ProgressDialog.show(this, "",
+                "Loading. Please wait...", true);
+        dialog.show();
+
+        Runnable progressRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                dialog.cancel();
+            }
+        };
+
+        Handler pdCanceller = new Handler();
+        pdCanceller.postDelayed(progressRunnable, 1000);
 
 
         mDatabase = database.getReference().child("BUS TIMETABLE").child("MONDAY TO FRIDAY").child("11:001AM");
@@ -40,8 +58,7 @@ public class Bustimes extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String s=dataSnapshot.getValue(String.class);
-                ArrayList<ExampleItem> exampleList = new ArrayList<>();
-                String[] arrSplit;
+
                  arrSplit = s.split("-");
 
              //   exampleList.add(new ExampleItem("MON - FRI"+"\n\n7:00 AM: Ajmeri Gate -> LNMIIT"));
@@ -51,12 +68,7 @@ public class Bustimes extends AppCompatActivity {
                     exampleList.add(new ExampleItem(" MON - FRI"+"\n\n"+arrSplit[i]));
                   //  Toast.makeText(getApplicationContext(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
                 }
-                mRecyclerView = findViewById(R.id.recyclerView);
-                mRecyclerView.setHasFixedSize(true);
-                mLayoutManager = new LinearLayoutManager(getApplicationContext());
-                mAdapter = new ExampleAdapter(exampleList);
-                mRecyclerView.setLayoutManager(mLayoutManager);
-                mRecyclerView.setAdapter(mAdapter);
+
                 // Toast.makeText(getActivity(), "yoo    " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
             }
             @Override
@@ -70,11 +82,19 @@ public class Bustimes extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String s=dataSnapshot.getValue(String.class);
-//                String[] arrSplit = s.split("-");
-//                for (int i=0; i < arrSplit.length; i++)
-//                {
-//                    Toast.makeText(getApplicationContext(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
-//                }
+                String[] arrSplit = s.split("-");
+
+
+                for (int i=0; i < arrSplit.length; i++)
+                {
+                    exampleList.add(new ExampleItem("SAT - SUN"+"\n\n"+arrSplit[i]));
+                }
+                mRecyclerView = findViewById(R.id.recyclerView);
+                mRecyclerView.setHasFixedSize(true);
+                mLayoutManager = new LinearLayoutManager(getApplicationContext());
+                mAdapter = new ExampleAdapter(exampleList);
+                mRecyclerView.setLayoutManager(mLayoutManager);
+                mRecyclerView.setAdapter(mAdapter);
 //                //Toast.makeText(getActivity(), "yoo    " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
             }
             @Override

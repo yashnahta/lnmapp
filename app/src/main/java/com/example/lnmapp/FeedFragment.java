@@ -1,6 +1,7 @@
 package com.example.lnmapp;
 
 
+import android.app.ProgressDialog;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +47,21 @@ View view;
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_feed, container, false);
 
-        String str = "dwekn.kcmlamsmwldn";
+        final ProgressDialog dialog = ProgressDialog.show(getContext(), "",
+                "Loading. Please wait...", true);
+        dialog.show();
+
+        Runnable progressRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                dialog.cancel();
+            }
+        };
+
+        Handler pdCanceller = new Handler();
+        pdCanceller.postDelayed(progressRunnable, 1000);
+
 
         mDatabase = database.getReference().child("FEED").child("feeds");
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
