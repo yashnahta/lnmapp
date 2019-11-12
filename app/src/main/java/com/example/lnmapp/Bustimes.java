@@ -83,7 +83,7 @@ public class Bustimes extends AppCompatActivity {
                     //  Toast.makeText(getApplicationContext(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
                 }
 
-                // Toast.makeText(getActivity(), "yoo    " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getActivity(), "yoo      " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

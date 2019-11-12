@@ -46,7 +46,7 @@ public class FeedFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_feed, container, false);
-
+        getActivity().setTitle("Feed");
         final ProgressDialog dialog = ProgressDialog.show(getContext(), "",
                 "Loading. Please wait...", true);
         dialog.show();
@@ -60,7 +60,6 @@ public class FeedFragment extends Fragment {
         };
 
         Handler pdCanceller = new Handler();
-        pdCanceller.postDelayed(progressRunnable, 1000);
 
 
         mDatabase = database.getReference().child("FEED").child("feeds");
@@ -134,6 +133,7 @@ public class FeedFragment extends Fragment {
 //        textView = view.findViewById(R.id.t8);
 //        textView.setText(arrSplit[7]);
 
+        pdCanceller.postDelayed(progressRunnable, 2000);
 
         return view;
     }
