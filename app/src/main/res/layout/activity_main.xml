@@ -14,7 +14,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/sa" />
+        android:src="@drawable/sa"
+         />
 
     <EditText
 

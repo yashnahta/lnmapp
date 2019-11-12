@@ -17,21 +17,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="30dp"
-            app:cardCornerRadius="8dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_height="173dp">
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="170dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="?attr/cardbackground"
                 android:orientation="horizontal">
-
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/view_breakfast"
@@ -63,11 +59,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="30dp"
-            app:cardCornerRadius="8dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="240dp"
-            android:layout_height="173dp">
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_height="170dp">
 
             <RelativeLayout
                 android:background="?attr/cardbackground"
@@ -112,11 +107,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="30dp"
-            app:cardCornerRadius="8dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="430dp"
-            android:layout_height="95dp">
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="370dp"
+            android:layout_height="170dp">
 
             <RelativeLayout
                 android:background="?attr/cardbackground"
@@ -161,11 +155,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="30dp"
-            app:cardCornerRadius="8dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="540dp"
-            android:layout_height="173dp">
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="550dp"
+            android:layout_height="170dp">
 
             <RelativeLayout
                 android:background="?attr/cardbackground"

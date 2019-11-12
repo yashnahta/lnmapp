@@ -34,46 +34,46 @@ public class PlacementActivity extends Fragment {
         textView.setText("COMPANY: Samsung");
 
         textView = v.findViewById(R.id.event1);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("EVENT: Pre-Placement Talk ");
 
         textView = v.findViewById(R.id.venue1);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("VENUE: LT-05");
 
         textView = v.findViewById(R.id.date1);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DATE AND TIME: 28th Aug, 5 PM");
 
         textView = v.findViewById(R.id.dress1);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DRESS CODE: Formals");
 
         textView = v.findViewById(R.id.company2);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("COMPANY: Amazon");
 
         textView = v.findViewById(R.id.event2);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("EVENT: Technical Round ");
 
         textView = v.findViewById(R.id.venue2);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("VENUE: CP-1");
 
         textView = v.findViewById(R.id.date2);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DATE AND TIME: 5th Sept, 7 PM");
 
         textView = v.findViewById(R.id.dress2);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DRESS CODE: Smart Casuals");
 
         textView = v.findViewById(R.id.company3);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("COMPANY: Addverb Technologies");
 
         textView = v.findViewById(R.id.event3);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("EVENT: Technical Round ");
 
         textView = v.findViewById(R.id.venue3);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("VENUE: CP-2");
 
         textView = v.findViewById(R.id.date3);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DATE AND TIME: 15th Sept, 6 PM");
 
         textView = v.findViewById(R.id.dress3);
-        textView.setText("COMPANY: Samsung");
+        textView.setText("DRESS CODE: Smart Casuals");
 
         return v;
 

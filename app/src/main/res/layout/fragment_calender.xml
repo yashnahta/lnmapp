@@ -8,7 +8,21 @@
     tools:context=".MainActivity">
 
 
-    <CalendarView
+    <sun.bob.mcalendarview.MCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_marginTop="64dp"
+        android:id="@+id/calendar"
+        android:background="#fffff0"
+        >
+
+
+
+    </sun.bob.mcalendarview.MCalendarView>
+   <!-- <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="377dp"
@@ -17,5 +31,5 @@
         tools:layout_editor_absoluteY="70dp"
         android:layout_marginTop="64dp"
         android:background="#d3d3d3"
-        />
+        />-->
 </RelativeLayout>

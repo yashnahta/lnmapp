@@ -67,7 +67,6 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:textSize="18sp"
-                    android:text="parvvcth"
                     android:textStyle="bold" />
 
 

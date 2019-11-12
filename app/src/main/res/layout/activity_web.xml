@@ -10,6 +10,16 @@
     <WebView
         android:id="@+id/myWebView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+       <!-- <ProgressBar
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_x="144dp"
+            android:layout_y="144dp"
+            android:foregroundGravity="center">
+
+        </ProgressBar> -->
+    </WebView>
 
 </RelativeLayout>
