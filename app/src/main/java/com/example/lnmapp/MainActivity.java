@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    protected void onStart() {
+        if(mAuth.getCurrentUser()!=null){
+            login();
+        }
+        super.onStart();
+    }
+
     public void goClicked(final View view) {
         if (password.getText().toString().isEmpty()  || username.getText().toString().isEmpty()) {
             Toast.makeText(this, "Please Enter Password and Username", Toast.LENGTH_SHORT).show();

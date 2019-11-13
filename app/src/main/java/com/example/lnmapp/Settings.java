@@ -8,6 +8,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,9 +40,28 @@ public class Settings extends Fragment {
         getActivity().setTitle("Log Out");
         mAuth.signOut();
 
+        View view=inflater.inflate(R.layout.fragment_settings, container, false);
+
         Toast.makeText(getActivity(),"Successfully Signed out",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(getActivity(),MainActivity.class);
         startActivity(intent);
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener( new View.OnKeyListener()
+        {
+            @Override
+            public boolean onKey( View v, int keyCode, KeyEvent event )
+            {
+                if( keyCode == KeyEvent.KEYCODE_BACK )
+                {
+                    getActivity().moveTaskToBack(true);
+                    getActivity().finish();
+
+                    return true;
+                }
+                return false;
+            }
+        } );
 
         return inflater.inflate(R.layout.fragment_settings, container, false);
 

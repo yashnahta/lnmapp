@@ -18,22 +18,18 @@
         >
 
 
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
-            app:cardCornerRadius="4dp"
+            android:layout_height="170dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:layout_height="170dp">
+            app:cardCornerRadius="4dp">
 
             <RelativeLayout
                 android:layout_width="343dp"
                 android:layout_height="172dp"
                 android:background="?attr/cardbackground"
                 android:orientation="horizontal">
-
-
 
 
                 <TextView
@@ -47,6 +43,7 @@
                     android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/event1"
                     android:layout_width="379dp"
@@ -98,12 +95,14 @@
 
                 <Switch
                     android:id="@+id/switch1"
-                    android:onClick="swi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="60dp"></Switch>
-
-
+                    android:layout_alignEnd="@+id/company1"
+                    android:layout_alignRight="@+id/company1"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="-33dp"
+                    android:layout_marginRight="-33dp"
+                    android:onClick="swi"></Switch>
 
 
             </RelativeLayout>
