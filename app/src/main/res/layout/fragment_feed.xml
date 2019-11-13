@@ -8,20 +8,22 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#E6E4E4">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t1"
@@ -30,16 +32,16 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
 
-                    android:textSize="18sp"
+                    android:textColor="?attr/colorPrimaryDark"
 
-                    android:textStyle="bold"
-                    android:textColor="?attr/colorPrimary"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
 
@@ -50,10 +52,37 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
+                    android:textColor="#141414"
 
-                    android:textColor="#141414" />
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_1"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
 
 
             </RelativeLayout>
@@ -63,16 +92,17 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t3"
@@ -81,20 +111,21 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
 
-
+                    android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
 
 
-                    android:textColor="?attr/colorPrimary" />
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t4"
                     android:layout_width="wrap_content"
@@ -102,10 +133,36 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
+                    android:textColor="#141414"
 
-                    android:textColor="#141414" />
+                    android:textSize="18sp" />
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_2"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
 
 
             </RelativeLayout>
@@ -114,16 +171,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="270dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="330dp"
             android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t5"
@@ -131,16 +189,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
+                    android:textColor="?attr/colorPrimaryDark"
+
                     android:textSize="18sp"
-
-
-                    android:textColor="?attr/colorPrimary" />
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
 
@@ -150,27 +208,53 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
-                    android:textSize="18sp"
+                    android:textColor="#141414"
 
-                    android:textColor="#141414" />
+                    android:textSize="18sp" />
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_3"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="400dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t7"
@@ -178,17 +262,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
+                    android:textColor="?attr/colorPrimaryDark"
                     android:textSize="18sp"
-                    android:textColor="?attr/colorPrimary" />
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t8"
                     android:layout_width="wrap_content"
@@ -196,10 +282,36 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
-                    android:textColor="#141414"/>
+                    android:textColor="#141414"
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_4"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -207,16 +319,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="530dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t9"
@@ -224,18 +337,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
-                    android:textSize="18sp"
+                    android:textColor="?attr/colorPrimaryDark"
 
-                    android:textColor="?attr/colorPrimary" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t10"
                     android:layout_width="wrap_content"
@@ -243,12 +358,38 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
+                    android:textColor="#141414"
 
 
-                    android:textColor="#141414"/>
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_5"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -256,16 +397,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="660dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="810dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t11"
@@ -273,18 +415,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
-                    android:textSize="18sp"
+                    android:textColor="?attr/colorPrimaryDark"
 
-                    android:textColor="?attr/colorPrimary" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t12"
                     android:layout_width="wrap_content"
@@ -292,10 +436,36 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
-                    android:textColor="#141414"/>
+                    android:textColor="#141414"
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_6"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -303,16 +473,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="790dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="970dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t13"
@@ -320,19 +491,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
+                    android:textColor="?attr/colorPrimaryDark"
+
                     android:textSize="18sp"
-
-
-                    android:textColor="?attr/colorPrimary" />
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t14"
                     android:layout_width="wrap_content"
@@ -340,12 +512,37 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
+                    android:textColor="#141414"
 
 
-                    android:textColor="#141414"/>
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_7"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -353,16 +550,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="920dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="150dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="1130dp"
+            android:layout_marginRight="10dp"
             app:cardCornerRadius="4dp">
+
             <RelativeLayout
 
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/t15"
@@ -370,18 +568,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
-                    android:textSize="18sp"
+                    android:textColor="?attr/colorPrimaryDark"
 
-                    android:textColor="?attr/colorPrimary" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
                     android:background="#d3d3d3" />
+
                 <TextView
                     android:id="@+id/t16"
                     android:layout_width="wrap_content"
@@ -389,10 +589,36 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="70dp"
 
-                    android:textSize="18sp"
-                    android:textColor="#141414"/>
+                    android:textColor="#141414"
+                    android:textSize="18sp" />
 
+                <View
+                    android:layout_width="365dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3" />
 
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Notify Me"
+                    android:textStyle="italic"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/feed_8"
+
+                    android:layout_width="134dp"
+                    android:layout_height="4dp"
+
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="120dp" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
