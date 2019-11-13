@@ -28,11 +28,11 @@
     <item android:id="@+id/quick"
         android:icon="@drawable/ic_link_black_24dp"
         android:title="Quick Links"/>
+    <item android:id="@+id/explore"
+        android:title="Explore"/>
     <item android:id="@+id/settings"
         android:icon="@drawable/ic_watch_later_black_24dp"
-        android:title="Settings"/>
-
-
+        android:title="Logout"/>
 
 
 </menu>

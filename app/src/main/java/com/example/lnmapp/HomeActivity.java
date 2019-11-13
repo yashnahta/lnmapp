@@ -66,7 +66,7 @@ public class HomeActivity extends AppCompatActivity  {
                     NavigationView nv = (NavigationView) findViewById(R.id.nv);
                     View headerView = nv.getHeaderView(0);
                     TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
-                    navUsername.setText(s);
+                    navUsername.setText("Hello, "+s);
 
                 }
 
@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity  {
                     NavigationView nv = (NavigationView) findViewById(R.id.nv);
                     View headerView = nv.getHeaderView(0);
                     TextView navUsername = (TextView) headerView.findViewById(R.id.rollid);
-                    navUsername.setText(s);
+                    navUsername.setText("Roll Number - "+s);
 
                 }
 
@@ -95,6 +95,14 @@ public class HomeActivity extends AppCompatActivity  {
             });
         }
 
+        else
+        {
+            nv = (NavigationView) findViewById(R.id.nv);
+            headerView = nv.getHeaderView(0);
+            TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
+            navUsername.setText("Hello, Guest");
+
+        }
                 nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -134,7 +142,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.settings:
-                                Toast.makeText(HomeActivity.this, " Settings",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Log Out",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Settings()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
@@ -153,6 +161,11 @@ public class HomeActivity extends AppCompatActivity  {
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Complaint()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
+                            case R.id.explore:
+                                Toast.makeText(HomeActivity.this, "Explore",Toast.LENGTH_SHORT).show();
+                                Intent intent1 =new Intent(getApplicationContext(),ExploreActivity.class);
+                                startActivity(intent1);
+                                 dl.closeDrawer(GravityCompat.START);
 
 
                             default:

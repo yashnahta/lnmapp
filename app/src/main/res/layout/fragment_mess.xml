@@ -23,11 +23,20 @@
             android:layout_marginTop="10dp"
             android:layout_height="170dp">
 
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="?attr/cardbackground"
                 android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mess"></androidx.appcompat.widget.AppCompatImageView>
+
 
                 <TextView
                     android:id="@+id/view_breakfast"
@@ -37,7 +46,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:text="BreakFast :"
-                    android:textColor="#141414"
+                    android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -49,6 +58,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="64dp"
                     android:layout_marginRight="16dp"
+                    android:textColor="#ffffff"
                     android:text="TextView"
                     android:textSize="18sp" />
 
@@ -70,7 +80,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mess"></androidx.appcompat.widget.AppCompatImageView>
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -82,7 +96,8 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:text="Lunch :"
-                    android:textColor="#141414"
+
+                    android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -97,6 +112,7 @@
                     android:layout_marginTop="64dp"
                     android:layout_marginRight="16dp"
                     android:text="TextView"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
 
@@ -118,6 +134,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mess"></androidx.appcompat.widget.AppCompatImageView>
 
 
                 android:layout_width="wrap_content"
@@ -130,7 +151,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:text="Snacks :"
-                    android:textColor="#141414"
+                    android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -145,6 +166,7 @@
                     android:layout_marginTop="64dp"
                     android:layout_marginRight="16dp"
                     android:text="TextView"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
 
@@ -166,6 +188,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mess"></androidx.appcompat.widget.AppCompatImageView>
 
 
                 android:layout_width="wrap_content"
@@ -178,7 +205,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginRight="16dp"
                     android:text="Dinner :"
-                    android:textColor="#141414"
+                    android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -193,6 +220,7 @@
                     android:layout_marginTop="64dp"
                     android:layout_marginRight="16dp"
                     android:text="TextView"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
 

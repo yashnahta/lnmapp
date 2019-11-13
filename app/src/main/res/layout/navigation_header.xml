@@ -16,13 +16,22 @@
     <TextView
         android:id="@+id/navuserid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/navuser" />
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="@string/navuser"
+        android:textColor="#1373BD"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/rollid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
+        android:layout_height="41dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#1373BD"
+        android:textSize="18sp" />
 
 
 </LinearLayout>

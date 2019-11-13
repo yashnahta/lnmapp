@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
@@ -22,6 +25,7 @@ import static com.firebase.ui.auth.AuthUI.getApplicationContext;
  */
 public class Settings extends Fragment {
 
+    private FirebaseAuth mAuth=FirebaseAuth.getInstance();
 
     public Settings() {
         // Required empty=- public constructor
@@ -32,10 +36,14 @@ public class Settings extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        getActivity().setTitle("Settings");
+        getActivity().setTitle("Log Out");
+        mAuth.signOut();
+
+        Toast.makeText(getActivity(),"Successfully Signed out",Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(getActivity(),MainActivity.class);
+        startActivity(intent);
+
         return inflater.inflate(R.layout.fragment_settings, container, false);
-
-
 
     }
 

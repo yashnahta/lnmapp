@@ -13,14 +13,14 @@ import android.os.Build;
 import static android.app.NotificationManager.IMPORTANCE_DEFAULT;
 
 public class AlarmReceiver2 extends BroadcastReceiver{
-    private static final String CHANNEL_ID = "com.singhajit.notificationDemo.channelId";
+    private static final String CHANNEL_ID = "";
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent notificationIntent = new Intent(context, HomeActivity.class);
+        Intent notificationIntent = new Intent(context, Bustimes.class);
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-        stackBuilder.addParentStack(HomeActivity.class);
+        stackBuilder.addParentStack(Bustimes.class);
         stackBuilder.addNextIntent(notificationIntent);
 
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
