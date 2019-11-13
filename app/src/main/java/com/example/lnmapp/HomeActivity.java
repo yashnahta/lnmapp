@@ -52,6 +52,7 @@ public class HomeActivity extends AppCompatActivity  {
 
         NavigationView nv = (NavigationView) findViewById(R.id.nv);
         View headerView = nv.getHeaderView(0);
+        nv.getMenu().getItem(0).setChecked(true);
 //
 //        TextView roll = (TextView) headerView.findViewById(R.id.rollid);
 //        roll.setText("Your Text Here");

@@ -14,21 +14,15 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-<<<<<<< HEAD
-=======
 
->>>>>>> 861ef7d9c3a42f652e1e0e9f13e35b7f91ed9abb
+
             android:layout_marginLeft="5dp"
 
             android:layout_marginRight="5dp"
-<<<<<<< HEAD
 
-
-=======
 
             android:layout_marginTop="10dp"
 
->>>>>>> 861ef7d9c3a42f652e1e0e9f13e35b7f91ed9abb
             app:cardCornerRadius="4dp">
 
             <RelativeLayout

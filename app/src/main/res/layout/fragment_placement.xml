@@ -26,15 +26,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:layout_height="170dp">
-
-<<<<<<< HEAD
-            android:layout_height="170dp"
+       android:layout_height="170dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="4dp">
-=======
-
->>>>>>> 861ef7d9c3a42f652e1e0e9f13e35b7f91ed9abb
 
 
             <RelativeLayout
