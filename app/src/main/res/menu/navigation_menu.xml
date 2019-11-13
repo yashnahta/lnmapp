@@ -31,7 +31,8 @@
     <item android:id="@+id/settings"
         android:icon="@drawable/ic_watch_later_black_24dp"
         android:title="Settings"/>
-
+    <item android:id="@+id/explore"
+        android:title="Explore"/>
 
 
 

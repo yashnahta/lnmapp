@@ -28,4 +28,8 @@
         <item name="buttoncolor">#2196F3</item>
     </style>
 
+    <style name="customfontstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/</item>
+    </style>
+
 </resources>
