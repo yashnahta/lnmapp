@@ -136,5 +136,5 @@
         android:background="#2196F3"
         android:onClick="goClicked"
         android:text="Sign Up"
-        tools:visibility="40dp" />
+        />
 </RelativeLayout>

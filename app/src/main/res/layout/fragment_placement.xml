@@ -96,6 +96,7 @@
 
                 <Switch
                     android:id="@+id/switch1"
+                    android:onClick="swi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="60dp"></Switch>
@@ -186,6 +187,7 @@
 
                 <Switch
                     android:id="@+id/switch2"
+                    android:onClick="swi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="60dp"></Switch>
@@ -273,6 +275,7 @@
                     android:textStyle="italic" />
                 <Switch
                     android:id="@+id/switch3"
+                    android:onClick="swi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="60dp"></Switch>

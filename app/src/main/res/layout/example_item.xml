@@ -44,7 +44,8 @@
             android:textSize="18sp" />
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switch11"
+            android:onClick="swii"
             android:layout_width="134dp"
             android:layout_height="4dp"
 

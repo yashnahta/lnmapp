@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/feed"
-        android:title="Feed"/>
+        android:title="Feed"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        />
     <item android:id="@+id/mess"
+        android:icon="@drawable/ic_restaurant_black_24dp"
         android:title="Mess Menu"/>
     <item android:id="@+id/class1"
+        android:icon="@drawable/ic_school_black_24dp"
         android:title="Class Schedule"/>
     <item android:id="@+id/bus"
+        android:icon="@drawable/ic_directions_bus_black_24dp"
         android:title="Bus Schedule"/>
     <item android:id="@+id/plc"
+        android:icon="@drawable/ic_work_black_24dp"
         android:title="Placement Activities"/>
     <item android:id="@+id/calender"
+        android:icon="@drawable/ic_date_range_black_24dp"
         android:title="Institute Calendar"/>
     <item android:id="@+id/map1"
+        android:icon="@drawable/ic_place_black_24dp"
         android:title="Institute Map"/>
     <item android:id="@+id/complaint"
+        android:icon="@drawable/ic_report_black_24dp"
         android:title="Make Complaints"/>
     <item android:id="@+id/quick"
+        android:icon="@drawable/ic_link_black_24dp"
         android:title="Quick Links"/>
     <item android:id="@+id/settings"
+        android:icon="@drawable/ic_watch_later_black_24dp"
         android:title="Settings"/>
     <item android:id="@+id/explore"
         android:title="Explore"/>

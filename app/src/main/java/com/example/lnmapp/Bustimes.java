@@ -1,6 +1,7 @@
 package com.example.lnmapp;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,11 +9,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.app.ActionBar;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
@@ -23,6 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Bustimes extends AppCompatActivity {
     private RecyclerView mRecyclerView;
@@ -83,7 +91,7 @@ public class Bustimes extends AppCompatActivity {
                     //  Toast.makeText(getApplicationContext(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
                 }
 
-                // Toast.makeText(getActivity(), "yoo    " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getActivity(), "yoo      " + dataSnapshot.getValue(String.class), Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
@@ -130,6 +138,23 @@ public class Bustimes extends AppCompatActivity {
 //        mAdapter = new ExampleAdapter(exampleList);
 //        mRecyclerView.setLayoutManager(mLayoutManager);
 //        mRecyclerView.setAdapter(mAdapter);
+    }
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+    public void swii(View view){
+
+        Switch sw3 =  view.findViewById(R.id.switch11);
+        if(sw3.isChecked()==true){
+            //    Toast.makeText(getActivity(),"hello",Toast.LENGTH_SHORT).show();;
+            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+            Intent notificationIntent = new Intent(this, AlarmReceiver2.class);
+            PendingIntent broadcast = PendingIntent.getBroadcast(this, 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+            Calendar cal = Calendar.getInstance();
+            cal.add(Calendar.SECOND,0);
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+        }
     }
 
 }

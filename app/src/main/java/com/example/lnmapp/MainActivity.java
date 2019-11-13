@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         this.setTitle("Welcome!");
 
         password=findViewById(R.id.pass);
@@ -37,47 +38,54 @@ public class MainActivity extends AppCompatActivity {
         if(mAuth.getCurrentUser()!=null){
             login();
         }
+
+
+
     }
-    public void goClicked(final View view){
-        final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "",
-                "Loading. Please wait...", true);
-        dialog.show();
+    public void goClicked(final View view) {
+        if (password.getText().toString().isEmpty()  || username.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Please Enter Password and Username", Toast.LENGTH_SHORT).show();
+            // return;
+        } else {
+            final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "",
+                    "Loading. Please wait...", true);
+            dialog.show();
 
-        Runnable progressRunnable = new Runnable() {
+            Runnable progressRunnable = new Runnable() {
 
-            @Override
-            public void run() {
-                dialog.cancel();
-            }
-        };
+                @Override
+                public void run() {
+                    dialog.cancel();
+                }
+            };
 
-        Handler pdCanceller = new Handler();
-        pdCanceller.postDelayed(progressRunnable, 1500);
-        mAuth.signInWithEmailAndPassword(username.getText().toString(), password.getText().toString())
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-
-                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
-                            login();
-                        } else {
-
-                            mAuth.createUserWithEmailAndPassword(username.getText().toString(), password.getText().toString());
-
-                            if(task.isSuccessful()) {
+            Handler pdCanceller = new Handler();
+            pdCanceller.postDelayed(progressRunnable, 1500);
+            mAuth.signInWithEmailAndPassword(username.getText().toString(), password.getText().toString())
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
 
                                 FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
                                 login();
-                            }
-                            else{
+                            } else {
 
-                                Toast.makeText(getApplicationContext(),"Login Failed,Try Again",Toast.LENGTH_SHORT).show();
+                                mAuth.createUserWithEmailAndPassword(username.getText().toString(), password.getText().toString());
+
+                                if (task.isSuccessful()) {
+
+                                    FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
+                                    login();
+                                } else {
+
+                                    Toast.makeText(getApplicationContext(), "Login Failed,Try Again", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
-                    }
-                });
+                    });
 
+        }
     }
     public void signup(View view){
         Intent intent =new Intent(this,SignUp.class);

@@ -1,14 +1,24 @@
 package com.example.lnmapp;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Calendar;
 
 
 /**
@@ -23,6 +33,7 @@ public class PlacementActivity extends Fragment {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,8 +86,69 @@ public class PlacementActivity extends Fragment {
         textView = v.findViewById(R.id.dress3);
         textView.setText("DRESS CODE: Smart Casuals");
 
+        Switch sw =  v.findViewById(R.id.switch1);
+
+        sw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Switch sw =  view.findViewById(R.id.switch1);
+                if(sw.isChecked()==true){
+                //    Toast.makeText(getActivity(),"hello",Toast.LENGTH_SHORT).show();;
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+                }
+            }
+        });
+        Switch sw1 =  v.findViewById(R.id.switch2);
+
+        sw1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Switch sw =  view.findViewById(R.id.switch2);
+                 if(sw.isChecked()==true){
+                //    Toast.makeText(getActivity(),"hello",Toast.LENGTH_SHORT).show();;
+                AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                Intent notificationIntent = new Intent(getActivity(), AlarmReceiver.class);
+                PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                Calendar cal = Calendar.getInstance();
+                cal.add(Calendar.SECOND, 0);
+                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+                 }
+            }
+        });
+        Switch sw3 =  v.findViewById(R.id.switch3);
+
+        sw3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Switch sw3 =  view.findViewById(R.id.switch3);
+                 if(sw3.isChecked()==true){
+                //    Toast.makeText(getActivity(),"hello",Toast.LENGTH_SHORT).show();;
+                AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                Intent notificationIntent = new Intent(getActivity(), AlarmReceiver.class);
+                PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                Calendar cal = Calendar.getInstance();
+                cal.add(Calendar.SECOND, 0);
+                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+                 }
+            }
+        });
         return v;
 
     }
+//    public void swi(View view){
+//
+//    }
+
 
 }
