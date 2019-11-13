@@ -14,12 +14,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Complaint extends Fragment {
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mDatabase;
+
+    private FirebaseAuth mAuth=FirebaseAuth.getInstance();
+    EditText subject;
+    EditText send;
     public Complaint() {
-
-
         // Required empty public constructor
     }
 
@@ -30,8 +40,8 @@ Button dial;
         View view = inflater.inflate(R.layout.fragment_complaint, container, false);
         // Inflate the layout for this fragment
         getActivity().setTitle("Make Complaints");
-
-
+        subject=view.findViewById(R.id.subject11);
+        send=view.findViewById(R.id.comp1);
         dial = view.findViewById(R.id.dial);
         dial.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +57,20 @@ Button dial;
             @Override
             public void onClick(View view) {
 
+                String s=subject.getText().toString();
+                String c=send.getText().toString();
+
+              //  if(subject!=null && send!=null) {
+                    if (mAuth.getCurrentUser() != null) {
+                        FirebaseDatabase.getInstance().getReference().child("Complaints").child(mAuth.getCurrentUser().getUid()).child("Email").setValue(mAuth.getCurrentUser().getEmail());
+                        FirebaseDatabase.getInstance().getReference().child("Complaints").child(mAuth.getCurrentUser().getUid()).child(s).setValue(c);
+                        Toast.makeText(getContext(), "Complaint Sent", Toast.LENGTH_SHORT).show();
+                    }
+                //}
+                else
+                {
+                    Toast.makeText(getContext(), "Please Login", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

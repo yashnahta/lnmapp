@@ -8,50 +8,51 @@
     <!-- TODO: Update blank fragment layout -->
 
     <EditText
-        android:id="@+id/comp"
+        android:id="@+id/comp1"
         android:layout_width="335dp"
         android:layout_height="180dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
+        android:layout_marginTop="272dp"
         android:layout_marginEnd="37dp"
         android:layout_marginRight="37dp"
         android:layout_marginBottom="279dp"
         android:background="@drawable/edittext_bg1"
         android:ems="10"
         android:gravity="top"
+        android:text="complain"
         android:hint="Complaint"
-        android:textAlignment="gravity"
         android:inputType="textMultiLine"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textAlignment="gravity" />
 
 
     <EditText
-        android:id="@+id/subject"
+        android:id="@+id/subject11"
         android:layout_width="329dp"
         android:layout_height="63dp"
-        android:layout_above="@+id/comp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:textAlignment="gravity"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
         android:background="@drawable/edittext_bg"
         android:ems="10"
-
         android:gravity="fill"
+        android:text="Subject"
         android:hint="Subject"
         android:inputType="textEmailSubject"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textAlignment="gravity" />
 
     <Button
         android:id="@+id/buttonSend"
