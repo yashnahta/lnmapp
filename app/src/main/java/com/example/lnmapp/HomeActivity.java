@@ -95,6 +95,14 @@ public class HomeActivity extends AppCompatActivity  {
             });
         }
 
+        else
+        {
+            nv = (NavigationView) findViewById(R.id.nv);
+            headerView = nv.getHeaderView(0);
+            TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
+            navUsername.setText("Hello, Guest");
+
+        }
                 nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
