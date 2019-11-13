@@ -27,8 +27,8 @@ public class AlarmReceiver2 extends BroadcastReceiver{
 
         Notification.Builder builder = new Notification.Builder(context);
 
-        Notification notification = builder.setContentTitle("Bus Time Notification")
-                .setContentText("New Notification From Bustime Activity")
+        Notification notification = builder.setContentTitle("MON - FRI")
+                .setContentText("3:05 PM: LNMIIT to Ajmeri Gate")
                 .setTicker("New Message Alert!")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();

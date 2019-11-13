@@ -27,8 +27,8 @@ public class AlarmReceiver3 extends BroadcastReceiver{
 
         Notification.Builder builder = new Notification.Builder(context);
 
-        Notification notification = builder.setContentTitle("Feed Notification")
-                .setContentText("New Notification From Feed Activity")
+        Notification notification = builder.setContentTitle("Phoenix Club Workshop")
+                .setContentText("Jan 1 - Jan 2, 2020")
                 .setTicker("New Message Alert!")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();

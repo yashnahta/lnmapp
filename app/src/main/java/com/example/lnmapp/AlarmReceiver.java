@@ -27,8 +27,8 @@ public class AlarmReceiver extends BroadcastReceiver{
 
         Notification.Builder builder = new Notification.Builder(context);
 
-        Notification notification = builder.setContentTitle("Placement Activity Notification")
-                .setContentText("New Notification From Placement Activity")
+        Notification notification = builder.setContentTitle("COMPANY: SAMSUNG")
+                .setContentText("Pre-Placement Talk, LT-05, 28th Aug, 5 PM")
                 .setTicker("New Message Alert!")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();
