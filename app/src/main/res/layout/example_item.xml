@@ -16,6 +16,9 @@
         android:layout_margin="4dp">
 
         <TextView
+            android:drawableLeft="@drawable/ic_directions_bus_black_24dp"
+            android:drawablePadding="6dp"
+
             android:id="@+id/txt_schedule"
             android:layout_width="365dp"
             android:layout_height="wrap_content"
