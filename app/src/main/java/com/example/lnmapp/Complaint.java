@@ -34,6 +34,7 @@ public class Complaint extends Fragment {
     }
 
 Button dial;
+    Button dial2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,6 +45,17 @@ Button dial;
         send=view.findViewById(R.id.comp1);
         dial = view.findViewById(R.id.dial);
         dial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri u = Uri.parse("tel:9680850226");
+                Intent intent = new Intent(Intent.ACTION_DIAL,u);
+
+                startActivity(intent);
+            }
+        });
+
+        dial2 = view.findViewById(R.id.dial2);
+        dial2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri u = Uri.parse("tel:9680850226");

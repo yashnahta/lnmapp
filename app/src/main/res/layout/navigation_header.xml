@@ -5,10 +5,10 @@
     android:layout_height="wrap_content"
     android:gravity="center"
 
-    android:background="@drawable/lnm">
+    android:background="@drawable/gradient">
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/logo"
@@ -21,18 +21,18 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="@string/navuser"
-        android:textColor="#1373BD"
-        android:textSize="20sp" />
+        android:textColor="#000000"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/rollid"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:fontFamily="sans-serif-condensed-light"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:text=""
-        android:textColor="#1373BD"
-        android:textSize="18sp" />
+        android:text="@string/navuser"
+        android:textColor="#000000"
+        android:textSize="12sp" />
 
 
 </LinearLayout>
