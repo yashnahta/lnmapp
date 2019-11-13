@@ -66,7 +66,7 @@ public class HomeActivity extends AppCompatActivity  {
                     NavigationView nv = (NavigationView) findViewById(R.id.nv);
                     View headerView = nv.getHeaderView(0);
                     TextView navUsername = (TextView) headerView.findViewById(R.id.navuserid);
-                    navUsername.setText(s);
+                    navUsername.setText("Hello, "+s);
 
                 }
 
@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity  {
                     NavigationView nv = (NavigationView) findViewById(R.id.nv);
                     View headerView = nv.getHeaderView(0);
                     TextView navUsername = (TextView) headerView.findViewById(R.id.rollid);
-                    navUsername.setText(s);
+                    navUsername.setText("Roll Number - "+s);
 
                 }
 
