@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="165dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -187,7 +187,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginTop="320dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -262,7 +262,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="475dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -339,7 +339,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="625dp"
+            android:layout_marginTop="630dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -419,7 +419,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="780dp"
+            android:layout_marginTop="785dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -497,7 +497,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="935dp"
+            android:layout_marginTop="940dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
@@ -576,7 +576,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="1090dp"
+            android:layout_marginTop="1095dp"
             android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
