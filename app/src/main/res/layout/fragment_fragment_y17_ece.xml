@@ -26,7 +26,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -45,7 +46,7 @@
                 android:layout_marginRight="16dp"
 
                 android:text="Monday :"
-                android:textColor="#141414"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -58,7 +59,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="8:00 AM - 8:50 AM : IGCN (A1), PCN (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_m2"
@@ -68,6 +70,7 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="9:00 AM - 9:50 AM : DSP (A1)"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <TextView
@@ -78,7 +81,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="10:00 AM - 10:50 AM : DC(A1)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_m4"
@@ -89,7 +93,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="11:00 AM - 11:50 AM : DSP(A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
 
@@ -101,10 +106,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="290dp"
-        android:layout_marginRight="30dp">
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -122,7 +128,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Tuesday :"
-                android:textColor="#141414"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -135,7 +141,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="8:00 AM - 9:30 AM : MICROI (A1)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_t2"
@@ -146,7 +153,8 @@
                 android:layout_marginRight="16dp"
                 android:text="11:00 AM - 12:20 AM : PTS"
                 android:layout_marginBottom="16dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -155,10 +163,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginRight="30dp">
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -176,7 +185,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Wednesday :"
-                android:textColor="#141414"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -189,7 +198,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="8:00 AM - 8:50 AM : DSP (A1)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w2"
@@ -199,7 +209,8 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="9:00 AM - 9:50 AM : DC (A1), DC (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w3"
@@ -209,7 +220,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="10:00 AM - 10:50 AM : DSP (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w4"
@@ -220,7 +232,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="12:00 PM - 12:50 PM : IGCN (A1), PCN (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
         </RelativeLayout>
@@ -230,10 +243,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="590dp"
-        android:layout_marginRight="30dp">
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -251,7 +265,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Thursday :"
-                android:textColor="#141414"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -264,7 +278,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="8:00 AM - 9:20 AM : MICROI"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_th2"
@@ -275,7 +290,8 @@
                 android:layout_marginRight="16dp"
                 android:text="11:00 AM - 12:20 PM : PTS"
                 android:layout_marginBottom="16dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -284,10 +300,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="720dp"
-        android:layout_marginRight="30dp">
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="645dp"
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -305,7 +322,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Friday :"
-                android:textColor="#141414"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -318,7 +335,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="8:00 AM - 8:50 AM : DC (A1), DC (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f2"
@@ -328,7 +346,8 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="9:00 AM - 9:50 AM : DSP (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f3"
@@ -338,7 +357,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="11:00 AM - 11:50 AM : IGCN(A1), PCN(A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f4"
@@ -349,7 +369,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="12:00 PM - 12:50 PM : DSP (A1)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
         </RelativeLayout>

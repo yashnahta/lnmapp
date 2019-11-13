@@ -27,7 +27,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -45,7 +46,7 @@
                 android:layout_marginRight="16dp"
                 android:text="Monday :"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -107,7 +108,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="220dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -124,7 +126,7 @@
                 android:layout_marginRight="16dp"
                 android:text="Tuesday :"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -161,7 +163,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="350dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -179,7 +182,7 @@
                 android:layout_marginRight="16dp"
                 android:text="Wednesday :"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -239,7 +242,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="515dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -258,7 +262,7 @@
                 android:layout_marginRight="16dp"
                 android:text="Thursday :"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
@@ -295,7 +299,8 @@
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="645dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:background="#d3d3d3">
 
         <RelativeLayout
 
@@ -314,7 +319,7 @@
                 android:layout_marginRight="16dp"
                 android:text="Friday :"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 

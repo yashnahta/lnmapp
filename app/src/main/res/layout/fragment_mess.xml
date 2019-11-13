@@ -60,7 +60,8 @@
                     android:layout_marginRight="16dp"
                     android:textColor="#F5F1F1"
                     android:text="TextView"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
 
             </RelativeLayout>
@@ -113,7 +114,8 @@
                     android:layout_marginRight="16dp"
                     android:text="TextView"
                     android:textColor="#ffffff"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
 
 
@@ -167,7 +169,8 @@
                     android:layout_marginRight="16dp"
                     android:text="TextView"
                     android:textColor="#ffffff"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
 
 
@@ -221,7 +224,8 @@
                     android:layout_marginRight="16dp"
                     android:text="TextView"
                     android:textColor="#ffffff"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
 
 

@@ -14,9 +14,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -34,7 +34,7 @@
 
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <View
@@ -54,7 +54,7 @@
 
                     android:textColor="#141414"
 
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -73,7 +73,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_1"
@@ -93,9 +93,9 @@
             android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="170dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -112,7 +112,7 @@
                     android:layout_marginTop="20dp"
 
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
 
 
                     android:textStyle="bold" />
@@ -135,7 +135,7 @@
 
                     android:textColor="#141414"
 
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
@@ -153,7 +153,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_2"
@@ -172,9 +172,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="330dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -191,7 +191,7 @@
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <View
@@ -210,7 +210,7 @@
                     android:layout_marginTop="70dp"
                     android:textColor="#141414"
 
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
                 <View
                     android:layout_width="365dp"
                     android:layout_height="1dp"
@@ -228,7 +228,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_3"
@@ -245,9 +245,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="490dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -263,7 +263,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -283,7 +283,7 @@
                     android:layout_marginTop="70dp"
 
                     android:textColor="#141414"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -302,7 +302,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_4"
@@ -320,9 +320,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="650dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="625dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -339,7 +339,7 @@
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -361,7 +361,7 @@
                     android:textColor="#141414"
 
 
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -380,7 +380,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_5"
@@ -398,9 +398,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="810dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="780dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -417,7 +417,7 @@
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -437,7 +437,7 @@
                     android:layout_marginTop="70dp"
 
                     android:textColor="#141414"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -456,7 +456,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_6"
@@ -474,9 +474,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="970dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="935dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -493,7 +493,7 @@
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -515,7 +515,7 @@
                     android:textColor="#141414"
 
 
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -533,7 +533,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_7"
@@ -551,9 +551,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="1130dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1090dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
@@ -570,7 +570,7 @@
                     android:layout_marginTop="20dp"
                     android:textColor="?attr/colorPrimaryDark"
 
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
 
@@ -590,7 +590,7 @@
                     android:layout_marginTop="70dp"
 
                     android:textColor="#141414"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <View
                     android:layout_width="365dp"
@@ -609,7 +609,7 @@
                     android:layout_marginRight="16dp"
                     android:text="Notify Me"
                     android:textStyle="italic"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <Switch
                     android:id="@+id/feed_8"

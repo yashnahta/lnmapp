@@ -21,10 +21,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             android:layout_height="170dp">
 
             <RelativeLayout
@@ -45,7 +45,7 @@
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Samsung"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/event1"
@@ -112,10 +112,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="190dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="180dp"
             android:layout_height="170dp">
 
             <RelativeLayout
@@ -136,7 +136,7 @@
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Amazon"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/event2"
@@ -202,10 +202,10 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             app:cardCornerRadius="4dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="370dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="355dp"
             android:layout_height="170dp">
 
             <RelativeLayout
@@ -225,7 +225,7 @@
                     android:layout_marginRight="16dp"
                     android:text="COMPANY: Addverb Technologies"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
                 <TextView
                     android:id="@+id/event3"
