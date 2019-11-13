@@ -20,7 +20,8 @@
         android:title="Quick Links"/>
     <item android:id="@+id/settings"
         android:title="Settings"/>
-
+    <item android:id="@+id/explore"
+        android:title="Explore"/>
 
 
 
