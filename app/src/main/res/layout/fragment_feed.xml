@@ -14,18 +14,30 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="150dp"
+<<<<<<< HEAD
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
+=======
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+>>>>>>> d5dd8a40257c194ff7fd2d843d372fd75ae0aa52
             app:cardCornerRadius="4dp">
 
             <RelativeLayout
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+
+                >
 
                 <TextView
+
+                    android:drawableLeft="@drawable/ic_school_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -47,6 +59,7 @@
 
                 <TextView
                     android:id="@+id/t2"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
@@ -105,6 +118,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_golf_course_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -184,6 +199,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_border_color_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -257,6 +274,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_camera_enhance_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -332,6 +351,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_content_paste_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -410,6 +431,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_build_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -486,6 +509,8 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:drawableLeft="@drawable/ic_public_black_24dp"
+                    android:drawablePadding="10dp"
                     android:id="@+id/t13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -7,22 +7,21 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+
     <EditText
         android:id="@+id/comp1"
-        android:layout_width="335dp"
-        android:layout_height="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="198dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginRight="37dp"
-        android:layout_marginBottom="279dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="292dp"
         android:background="@drawable/edittext_bg1"
         android:ems="10"
         android:gravity="top"
@@ -31,21 +30,20 @@
         android:padding="10dp"
         android:textAlignment="gravity" />
 
-
     <EditText
         android:id="@+id/subject11"
         android:layout_width="329dp"
         android:layout_height="63dp"
-        android:layout_above="@+id/buttonSend"
+        android:layout_above="@+id/comp1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="45dp"
         android:background="@drawable/edittext_bg"
         android:ems="10"
         android:gravity="fill"
@@ -63,31 +61,49 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="146dp"
-        android:layout_marginRight="146dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginRight="143dp"
+        android:layout_marginBottom="209dp"
 
 
         android:background="#2196F3"
 
         android:text="SEND" />
 
+
     <Button
         android:id="@+id/dial"
 
-        style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
-        android:layout_width="120dp"
+        style="@style/FirebaseUI.Button.AccountChooser.PhoneButton"
+        android:layout_width="217dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="36dp"
 
-        android:background="#2196F3"
+        android:background="#00C853"
 
-        android:text="CALL" />
+        android:text="Gymkhana VP" />
+
+    <Button
+        android:id="@+id/dial2"
+
+        style="@style/FirebaseUI.Button.AccountChooser.PhoneButton"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="107dp"
+
+        android:background="#00C853"
+
+        android:text="Gymkhana President" />
 
 
 </RelativeLayout>

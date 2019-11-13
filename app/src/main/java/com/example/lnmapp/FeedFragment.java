@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -278,6 +279,23 @@ public class FeedFragment extends Fragment {
 
                 }            }
         });
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener( new View.OnKeyListener()
+        {
+            @Override
+            public boolean onKey( View v, int keyCode, KeyEvent event )
+            {
+                if( keyCode == KeyEvent.KEYCODE_BACK )
+                {
+                    getActivity().moveTaskToBack(true);
+                    getActivity().finish();
+
+                    return true;
+                }
+                return false;
+            }
+        } );
         return view;
     }
 

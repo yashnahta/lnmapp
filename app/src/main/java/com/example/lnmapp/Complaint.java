@@ -10,6 +10,7 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,7 @@ public class Complaint extends Fragment {
     }
 
 Button dial;
+    Button dial2;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,6 +46,17 @@ Button dial;
         send=view.findViewById(R.id.comp1);
         dial = view.findViewById(R.id.dial);
         dial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri u = Uri.parse("tel:9680850226");
+                Intent intent = new Intent(Intent.ACTION_DIAL,u);
+
+                startActivity(intent);
+            }
+        });
+
+        dial2 = view.findViewById(R.id.dial2);
+        dial2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Uri u = Uri.parse("tel:9680850226");
@@ -74,6 +87,23 @@ Button dial;
             }
         });
 
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener( new View.OnKeyListener()
+        {
+            @Override
+            public boolean onKey( View v, int keyCode, KeyEvent event )
+            {
+                if( keyCode == KeyEvent.KEYCODE_BACK )
+                {
+                    getActivity().moveTaskToBack(true);
+                    getActivity().finish();
+
+                    return true;
+                }
+                return false;
+            }
+        } );
 
         return view;
     }
