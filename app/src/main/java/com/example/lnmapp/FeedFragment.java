@@ -1,7 +1,11 @@
 package com.example.lnmapp;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -14,6 +18,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,11 +29,22 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Calendar;
+
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;
 
 public class FeedFragment extends Fragment {
 
     View view;
+
+    Switch swq;
+    Switch swq2;
+    Switch swq3;
+    Switch swq4;
+    Switch swq5;
+    Switch swq6;
+    Switch swq7;
+    Switch swq8;
     private TextView textView2;
     private TextView textView3;
     private TextView textView4;
@@ -123,38 +139,145 @@ public class FeedFragment extends Fragment {
 
             }
         });
-//        for (int i=0; i < arrSplit.length; i++)
-//        {
-//            Toast.makeText(getActivity(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
-//        }
 
-//        TextView textView ;
-//        textView = view.findViewById(R.id.t1);
-//        textView.setText(arrSplit[0]);
-//
-//        textView2 = view.findViewById(R.id.t2);
-//        textView2.setText(arrSplit[1]);
-//
-//        textView3 = view.findViewById(R.id.t3);
-//        textView3.setText(arrSplit[2]);
-//
-//        textView4 = view.findViewById(R.id.t4);
-//        textView4.setText(arrSplit[3]);
-//
-//        textView = view.findViewById(R.id.t5);
-//        textView.setText(arrSplit[4]);
-//
-//        textView = view.findViewById(R.id.t6);
-//        textView.setText(arrSplit[5]);
-//
-//        textView = view.findViewById(R.id.t7);
-//        textView.setText(arrSplit[6]);
-//
-//        textView = view.findViewById(R.id.t8);
-//        textView.setText(arrSplit[7]);
+         swq= view.findViewById(R.id.feed_1);
+        swq.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq.isChecked()) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 
-        pdCanceller.postDelayed(progressRunnable, 2000);
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+
+        swq2= view.findViewById(R.id.feed_2);
+        swq2.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq2.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+        swq3= view.findViewById(R.id.feed_3);
+        swq3.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq3.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+        swq4= view.findViewById(R.id.feed_4);
+        swq4.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq4.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+        swq5= view.findViewById(R.id.feed_5);
+        swq5.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq5.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+
+        swq6= view.findViewById(R.id.feed_6);
+        swq6.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq6.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+        swq7= view.findViewById(R.id.feed_7);
+        swq7.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq7.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
+        swq8= view.findViewById(R.id.feed_8);
+        swq8.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                if(swq8.isChecked()==true) {
+                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+
+                    Intent notificationIntent = new Intent(getActivity(), AlarmReceiver3.class);
+                    PendingIntent broadcast = PendingIntent.getBroadcast(getActivity(), 100, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+                    Calendar cal = Calendar.getInstance();
+                    cal.add(Calendar.SECOND, 0);
+                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), broadcast);
+
+                }            }
+        });
         return view;
     }
 

@@ -48,7 +48,15 @@ public class CalenderFrag extends Fragment {
 
         ArrayList<DateData> dates = new ArrayList<>();
         dates.add(new DateData(2019,9,14));
-        dates.add(new DateData(2019,11,27));
+        dates.add(new DateData(2019,9,10));
+        dates.add(new DateData(2019,9,14));
+        dates.add(new DateData(2019,10,2));
+        dates.add(new DateData(2019,10,8));
+        dates.add(new DateData(2019,10,27));
+        dates.add(new DateData(2019,10,28));
+        dates.add(new DateData(2019,11,10));
+        dates.add(new DateData(2019,11,12));
+        dates.add(new DateData(2019,12,25));
 
         for(int i=0;i<dates.size();i++){
             calendarView.markDate(dates.get(i).getYear(),dates.get(i).getMonth(),dates.get(i).getDay());
@@ -61,7 +69,24 @@ public class CalenderFrag extends Fragment {
 
                 if(date.getDay()== 14 && date.getMonth() == 9){
                     Toast.makeText(getActivity(), "LNMIIT Foundation Day", Toast.LENGTH_SHORT).show();
-                }else{
+                }else if(date.getDay()==10 && date.getMonth()== 9){
+                    Toast.makeText(getActivity(), "Holiday - Muharram", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==2 && date.getMonth()== 10){
+                    Toast.makeText(getActivity(), "Holiday - Gandhi Jayanti", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==8 && date.getMonth()== 10){
+                    Toast.makeText(getActivity(), "Holiday - Dussehra", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==27 && date.getMonth()== 10){
+                    Toast.makeText(getActivity(), "Holiday - Diwali", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==28 && date.getMonth()== 10){
+                    Toast.makeText(getActivity(), "Holiday - Gowardhan Puja", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==10 && date.getMonth()== 11){
+                    Toast.makeText(getActivity(), "Holiday - Milad-Un Nabi/Eid-E-Milad", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==12 && date.getMonth()== 11){
+                    Toast.makeText(getActivity(), "Holiday - Guru Nanak Jayanti", Toast.LENGTH_SHORT).show();
+                }else if(date.getDay()==25 && date.getMonth()== 12){
+                    Toast.makeText(getActivity(), "Holiday - Christmas", Toast.LENGTH_SHORT).show();
+                }
+                else{
                     Toast.makeText(getActivity(), "No Event Today", Toast.LENGTH_SHORT).show();
                     // calendarView.markDate(date);
                 }

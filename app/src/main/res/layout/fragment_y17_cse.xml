@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Y17CSE">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--<TextView
         android:id="@+id/view_y17_cse"
         android:layout_width="373dp"
         android:layout_height="wrap_content"
@@ -19,7 +20,7 @@
         android:textColor="?attr/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold" />
-
+-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +44,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Monday :"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -56,6 +57,7 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="1:00 PM - 1:50 PM : IDS (A1), AI (A2)"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <TextView
@@ -66,6 +68,7 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="2:00 PM - 2:50 PM : SWE (A1), CS (A2)"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
             <TextView
@@ -76,7 +79,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="3:00 PM - 3:50 PM : AI (A1), IDS (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_m4"
@@ -87,7 +91,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="4:00 PM - 4:50 PM : CS (A1), SWE (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
 
@@ -118,7 +123,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Tuesday :"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -131,7 +136,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="2:30 PM - 3:50 PM : IOT"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_t2"
@@ -142,7 +148,8 @@
                 android:layout_marginRight="16dp"
                 android:text="4:00 PM - 5:20 PM : IMAD"
                 android:layout_marginBottom="16dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -153,7 +160,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="350dp"
         android:layout_marginRight="10dp">
 
         <RelativeLayout
@@ -171,7 +178,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Wednesday :"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -184,7 +191,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="1:00 PM - 1:50 PM : SWE (A1), CS (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w2"
@@ -194,7 +202,8 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="2:00 PM - 2:50 PM : AI (A1), IDS (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w3"
@@ -204,7 +213,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="3:00 PM - 3:50 PM : CS (A1), SWE (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_w4"
@@ -215,7 +225,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="5:00 PM - 5:50 PM : IDS (A1), AI (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
         </RelativeLayout>
@@ -227,7 +238,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="515dp"
         android:layout_marginRight="10dp">
 
         <RelativeLayout
@@ -246,7 +257,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Thursday :"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -259,7 +270,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="2:30 PM - 3:50 PM : IOT"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_th2"
@@ -270,7 +282,8 @@
                 android:layout_marginRight="16dp"
                 android:text="4:00 PM - 5:20 PM : IMAD"
                 android:layout_marginBottom="16dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -281,7 +294,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="660dp"
+        android:layout_marginTop="645dp"
         android:layout_marginRight="10dp">
 
         <RelativeLayout
@@ -300,7 +313,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:text="Friday :"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimaryDark"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -313,7 +326,8 @@
                 android:layout_marginTop="64dp"
                 android:layout_marginRight="16dp"
                 android:text="1:00 PM - 1:50 PM : AI (A1), IDS (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f2"
@@ -323,7 +337,8 @@
                 android:layout_marginTop="85dp"
                 android:layout_marginRight="16dp"
                 android:text="2:00 PM - 2:50 PM : CS (A1), SWE (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f3"
@@ -333,7 +348,8 @@
                 android:layout_marginTop="106dp"
                 android:layout_marginRight="16dp"
                 android:text="4:00 PM - 4:50 PM : IDS (A1), AI (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/txt_display_f4"
@@ -344,7 +360,8 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
                 android:text="5:00 PM - 5:50 PM : SWE (A1), CS (A2)"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold"/>
 
 
         </RelativeLayout>
