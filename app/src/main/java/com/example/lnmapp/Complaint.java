@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Complaint extends Fragment {
     public Complaint() {
@@ -29,17 +30,25 @@ Button dial;
         getActivity().setTitle("Make Complaints");
 
         dial = view.findViewById(R.id.dial);
+        dial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri u = Uri.parse("tel:9680850226");
+                Intent intent = new Intent(Intent.ACTION_DIAL,u);
+
+                startActivity(intent);
+            }
+        });
+        Button b=view.findViewById(R.id.buttonSend);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
         return view;
-    }
-    public void onDialButton(View view) {
-        Intent intent = new Intent(Intent.ACTION_CALL);
-        intent.setData(Uri.parse("tel:9680850226"));
-    if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-        return;
-    }
-        startActivity(intent);
     }
 
 }
