@@ -1,6 +1,6 @@
 package com.example.lnmapp;
-
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,9 +8,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.lnmapp.MessFrag;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
+    public String[] arrSplit;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mDatabase;
+    String ss;
 
     public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -22,10 +30,27 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         position = position+ 1;
         Bundle bundle = new Bundle();
 
-        if(position == 1) {
 
+        mDatabase = database.getReference().child("MESS MENU").child("01-MONDAY").child("mon");
+        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String s=dataSnapshot.getValue(String.class);
+
+                arrSplit = s.split("--");
+                ss=s;
+                Log.i("mess",arrSplit[1]);
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        if(position == 1) {
             bundle.putString("message", "Monday");
-            bundle.putString("message_b","Pav Bhaji/Boiled Eggs");
+            bundle.putString("message_b","Cutlet");
             bundle.putString("message_l","Rajma, Lauki, Plain Rice, Roti, Boondi Raita");
             bundle.putString("message_s","Veg Pakora");
             bundle.putString("message_d","Black Masoor Daal, Dum Aloo, Fried Rice, Roti, Balushahi");
