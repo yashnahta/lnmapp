@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 public class Complaint extends Fragment {
     public Complaint() {
+
+
         // Required empty public constructor
     }
 
@@ -28,6 +30,7 @@ Button dial;
         View view = inflater.inflate(R.layout.fragment_complaint, container, false);
         // Inflate the layout for this fragment
         getActivity().setTitle("Make Complaints");
+
 
         dial = view.findViewById(R.id.dial);
         dial.setOnClickListener(new View.OnClickListener() {

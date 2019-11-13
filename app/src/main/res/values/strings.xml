@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">lnmapp</string>
+    <string name="app_name">Assistant</string>
     <!-- //   <string name="RC_SIGN_IN">17431404493–1kcjlpselp3uu6t6g2fmomqfle5t392n.apps.googleusercontent.com</string>-->
     <string name="Open">lnmapp</string>
     <string name="Close">lnmapp</string>
