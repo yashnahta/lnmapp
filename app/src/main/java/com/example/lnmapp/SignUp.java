@@ -40,50 +40,54 @@ public class SignUp extends AppCompatActivity {
 
 
     }
-    public void goClicked(final View view){
-        final ProgressDialog dialog = ProgressDialog.show(SignUp.this, "",
-                "Loading. Please wait...", true);
-        dialog.show();
+    public void goClicked(final View view) {
+        if (password.getText().toString().isEmpty() || username.getText().toString().isEmpty() ||name.getText().toString().isEmpty() || roll.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Please Enter Password,Username,Name and Roll number", Toast.LENGTH_SHORT).show();
+            // return;
+        } else {
+            final ProgressDialog dialog = ProgressDialog.show(SignUp.this, "",
+                    "Loading. Please wait...", true);
+            dialog.show();
 
-        Runnable progressRunnable = new Runnable() {
+            Runnable progressRunnable = new Runnable() {
 
-            @Override
-            public void run() {
-                dialog.cancel();
-            }
-        };
+                @Override
+                public void run() {
+                    dialog.cancel();
+                }
+            };
 
-        Handler pdCanceller = new Handler();
-        pdCanceller.postDelayed(progressRunnable, 1500);
-        mAuth.signInWithEmailAndPassword(username.getText().toString(), password.getText().toString())
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-
-                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
-                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("name").setValue(name.getText().toString());
-                            FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("roll").setValue(roll.getText().toString());
-                            login();
-                        } else {
-
-                            mAuth.createUserWithEmailAndPassword(username.getText().toString(), password.getText().toString());
-
-                            if(task.isSuccessful()) {
+            Handler pdCanceller = new Handler();
+            pdCanceller.postDelayed(progressRunnable, 1500);
+            mAuth.signInWithEmailAndPassword(username.getText().toString(), password.getText().toString())
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
 
                                 FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
                                 FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("name").setValue(name.getText().toString());
                                 FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("roll").setValue(roll.getText().toString());
                                 login();
-                            }
-                            else{
+                            } else {
 
-                                Toast.makeText(getApplicationContext(),"Login Failed,Try Again",Toast.LENGTH_SHORT).show();
+                                mAuth.createUserWithEmailAndPassword(username.getText().toString(), password.getText().toString());
+
+                                if (task.isSuccessful()) {
+
+                                    FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("email").setValue(username.getText().toString());
+                                    FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("name").setValue(name.getText().toString());
+                                    FirebaseDatabase.getInstance().getReference().child("users").child(task.getResult().getUser().getUid()).child("roll").setValue(roll.getText().toString());
+                                    login();
+                                } else {
+
+                                    Toast.makeText(getApplicationContext(), "Login Failed,Try Again", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
-                    }
-                });
+                    });
 
+        }
     }
     public void guest(View view){
         Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
