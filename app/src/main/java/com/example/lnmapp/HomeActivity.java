@@ -134,7 +134,7 @@ public class HomeActivity extends AppCompatActivity  {
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
                             case R.id.settings:
-                                Toast.makeText(HomeActivity.this, " Settings",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(HomeActivity.this, "Log Out",Toast.LENGTH_SHORT).show();
                                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Settings()).commit();
                                 dl.closeDrawer(GravityCompat.START);
                                 break;
