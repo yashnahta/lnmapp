@@ -96,24 +96,24 @@ public class FeedFragment extends Fragment {
                 textView.setText(arrSplit[7]);
                 // Toast.makeText(getActivity(),arrSplit.length+"  1  "+arrSplit[i],Toast.LENGTH_SHORT).show();
 
-//                textView = view.findViewById(R.id.t8);
-//                textView.setText(arrSplit[8]);
-//                textView = view.findViewById(R.id.t9);
-//                textView.setText(arrSplit[9]);
-//                textView = view.findViewById(R.id.t10);
-//                textView.setText(arrSplit[10]);
-//                textView = view.findViewById(R.id.t11);
-//                textView.setText(arrSplit[11]);
-//                textView = view.findViewById(R.id.t12);
-//                textView.setText(arrSplit[12]);
-//                textView = view.findViewById(R.id.t13);
-//                textView.setText(arrSplit[13]);
-//                textView = view.findViewById(R.id.t14);
-//                textView.setText(arrSplit[14]);
-//                textView = view.findViewById(R.id.t15);
-//                textView.setText(arrSplit[15]);
-//                textView = view.findViewById(R.id.t16);
-//                textView.setText(arrSplit[16]);
+                textView = view.findViewById(R.id.t8);
+                textView.setText(arrSplit[8]);
+                textView = view.findViewById(R.id.t9);
+                textView.setText(arrSplit[10]);
+                textView = view.findViewById(R.id.t10);
+                textView.setText(arrSplit[9]);
+                textView = view.findViewById(R.id.t11);
+                textView.setText(arrSplit[12]);
+                textView = view.findViewById(R.id.t12);
+                textView.setText(arrSplit[11]);
+                textView = view.findViewById(R.id.t13);
+                textView.setText(arrSplit[14]);
+                textView = view.findViewById(R.id.t14);
+                textView.setText(arrSplit[13]);
+                textView = view.findViewById(R.id.t15);
+                textView.setText(arrSplit[0]);
+                textView = view.findViewById(R.id.t16);
+                textView.setText(arrSplit[1]);
 
 
             }
