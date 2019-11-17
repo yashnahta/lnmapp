@@ -32,7 +32,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBkWDENIQGJ4defUnnA01q_uqLNjH2ux6I" />
+            android:value="" />
 
         <activity
             android:name=".MessActivity"
